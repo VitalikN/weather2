@@ -23,7 +23,7 @@ function onSearch(evt) {
       .then(data => createMarkup(data))
       .catch(err => createErrorMassager(err));
   } else {
-    return createErrorMassager(err);
+    createErrorMassager(err);
   }
 }
 
